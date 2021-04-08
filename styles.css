@@ -42,7 +42,7 @@ nav {
   margin: auto;
   min-height: 10vh;
   align-items: center;
-  width: 60%;
+  width: 90%;
   margin-top: 20px;
   margin-bottom: 30px;
 }
@@ -110,7 +110,7 @@ nav {
 
 .mainSection {
   min-width: 450px;
-  max-width: 600px;
+  max-width: 90%;
   margin: auto;
   padding: 10px;
   text-align: center;

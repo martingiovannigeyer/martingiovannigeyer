@@ -110,7 +110,7 @@ nav {
 
 .mainSection {
   min-width: 450px;
-  max-width: 90%;
+  max-width: 95%;
   margin: auto;
   padding: 10px;
   text-align: center;
@@ -180,4 +180,5 @@ nav {
 img {
   position: relative;
   z-index: -3;
+  margin-top: 10px;
 }

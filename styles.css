@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+@media only screen and (max-width: 1300px) {
+  .mainSection {
+    max-width: 95%;
+  }
+
 body {
   font-family: futura, "segoe ui", sans-serif;
   cursor: none;
@@ -111,7 +116,7 @@ nav {
 
 .mainSection {
   min-width: 450px;
-  max-width: 95%;
+  max-width: 800px;
   margin: auto;
   padding: 10px;
   text-align: center;

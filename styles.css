@@ -4,12 +4,6 @@
   box-sizing: border-box;
 }
 
-@media only screen and (max-width: 800px) {
-  .mainSection {
-    width: 95%;
-  }
-}
-
 body {
   font-family: futura, "segoe ui", sans-serif;
   cursor: none;

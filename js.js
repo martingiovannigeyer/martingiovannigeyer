@@ -2,8 +2,10 @@ let mouseCursor = document.querySelector(".cursor");
 let navLinks = document.querySelectorAll(".navbar li ");
 let headerMain = document.querySelectorAll(" h1");
 let captions = document.querySelectorAll(".sectionheader h3");
+let subheaders = document.querySelectorAll(".centralheader h4");
 let descriptions = document.querySelectorAll(".sectionheader p");
 let images = document.querySelectorAll(".images img");
+let cards = document.querySelectorAll(".card__inner");
 
 window.addEventListener("mousemove", cursor);
 
@@ -45,6 +47,17 @@ captions.forEach(caption => {
   });
 });
 
+subheaders.forEach(subheader => {
+  subheader.addEventListener("mouseleave", () => {
+    mouseCursor.classList.remove("link-grow");
+    subheader.classList.remove("hovered-caption");
+  });
+  subheader.addEventListener("mouseover", () => {
+    mouseCursor.classList.add("link-grow");
+    subheader.classList.add("hovered-caption");
+  });
+});
+
 descriptions.forEach(description => {
   description.addEventListener("mouseleave", () => {
     mouseCursor.classList.remove("link-grow");
@@ -64,3 +77,9 @@ images.forEach(image => {
     mouseCursor.classList.add("link-grow");
   });
 });
+
+cards.forEach(card => {
+  card.addEventListener("click", function (e) {
+    card.classList.toggle('is-flipped');
+  });
+})

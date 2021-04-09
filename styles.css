@@ -4,10 +4,42 @@
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .mainSection {
-  margin: 10px;
-  max-width: 95%;
+  width: auto;
+  }
+
+  .card {
+    width: 95vw;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .bullet {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 601px) {
+  .mainSection {
+  width:600px;
+  margin: auto;
+  }
+
+  .card {
+    width: 580px;
+  }
+
+  .navbar {
+    display: flex
+  }
+
+  .linkbox {
+    padding-left:150px;
+    padding-right:150px;
   }
 }
 
@@ -71,7 +103,6 @@ nav {
 
 
 .navbar {
-  display: flex;
   justify-content: space-between;
   list-style: none;
 }
@@ -85,7 +116,7 @@ nav {
   align-items: center;
   margin: 10px;
   height: auto;
-  width: 200px;
+  width: auto;
   border: 3px solid blue;
 }
 
@@ -160,9 +191,6 @@ nav {
 }
 
 .mainSection {
-  min-width: 30%;
-  max-width: 600px;
-  margin: auto;
   padding: 10px;
   text-align: center;
 }
@@ -194,7 +222,8 @@ nav {
 }
 
 .images {
-  width: 100%;
+  width: auto;
+  min-width: 580px;
   position: relative;
   bottom: 0;
   height: 100%;
@@ -202,10 +231,11 @@ nav {
 }
 
 .coverimage {
-  width: 100%;
+  width: auto;
+  min-width: 580px;
   position: relative;
+  bottom: 0;
   height: 100%;
-  margin-top: 0px
 }
 
 .container {
@@ -251,7 +281,7 @@ img {
 
 .card {
   margin: 10px auto 0;
-  width: 580px;
+  /* width: 580px; */
   height: 350px;
   perspective: 1000px;
 }

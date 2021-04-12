@@ -338,6 +338,7 @@ nav {
   vertical-align: center;
   font-size: 0.9rem;
   text-align: justify;
+  z-index: 10;
 }
 
 .cardCaption {

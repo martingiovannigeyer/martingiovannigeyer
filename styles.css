@@ -59,7 +59,7 @@
     padding-right:150px;
   }
 
-  #myNav {
+  .myNav {
     display: none;
   }
 
@@ -101,6 +101,7 @@ h3 {
 h4 {
   font-size: 1.1rem;
   text-align: left;
+  margin-bottom: 10px;
 }
 
 
@@ -109,7 +110,8 @@ img {
   margin-top: 10px;
   min-height: 400px;
   z-index: -1;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+              0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* by classes */
@@ -180,7 +182,6 @@ nav {
   z-index: 2;
   top: 0;
   left: 0;
-  background-color: rgb(0,0,0);
   background-color: white;
   overflow-x: hidden;
   transition: 0.5s;
@@ -298,6 +299,7 @@ nav {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  /* visibility: visible; */
   -webkit-transform: translate3d(0,0,0);
   overflow: hidden;
   vertical-align: middle;
@@ -327,19 +329,24 @@ nav {
 }
 
 .cardFaceBack {
+  position: absolute;
   transform: rotateY(180deg);
   background-color: #f9f9f9;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cardBackDescription {
-  font-stretch: condensed;
+  font-family: "Gill Sans";
+  font-weight: normal;
   color: black;
   margin: auto;
-  vertical-align: center;
   font-size: 0.9rem;
   text-align: justify;
   z-index: 10;
+  position: relative;
+  vertical-align: middle;
 }
 
 .cardCaption {

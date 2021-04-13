@@ -6,6 +6,10 @@
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="styles.css">
   <title>Martin Giovanni Geyer</title>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
 </head>
 
 <body>
@@ -13,150 +17,183 @@
   <nav>
     <h1 class="headertext"><a href="index.html">Martin Giovanni Geyer</a> </h1>
     <ul class="navbar">
-      <li class="headerItem"><a href="academics.html">academics</a></li>
-      <li class="headerItem"><a href="work.html">work</a></li>
-      <li class="headerItem"><a href="interests.html">interests</a></li>
-      <li class="headerItem"><a href="contact.html">contact</a></li>
+      <li class="navbarLink"><a href="academics.html">academics</a></li>
+      <li class="navbarLink"><a href="work.html">work</a></li>
+      <li class="navbarLink"><a href="interests.html">interests</a></li>
+      <li class="navbarLink"><a href="contact.html">contact</a></li>
     </ul>
+    <span class="myNav-2" style="font-size:30px;color:blue" onclick="openNav()">&#9776;</span>
   </nav>
 
+  <div id="myNav" class="overlay">
+    <a class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="academics.html">academics</a>
+      <a href="work.html">work</a>
+      <a href="interests.html">interests</a>
+      <a href="contact.html">contact</a>
+    </div>
+  </div>
+
+  <!-- Start of main Section -->
   <div class="mainSection">
+    <!-- Subheading -->
     <h2>Full-Time</h2> <br><br>
     <div class="card">
       <div class="card__inner">
-        <div class="card__face card__face--front">
-          <img src="https://davidchipperfield.com/img/a3luS2RncnVsYmVnbWFUdE50WXg0UT09/845_10_sm_121205_n2.jpg" class="images" alt="business">
-          <div class="centralheader">
+        <div class="cardFace cardFaceFront">
+          <img src="https://davidchipperfield.com/img/a3luS2RncnVsYmVnbWFUdE50WXg0UT09/845_10_sm_121205_n2.jpg" class="cardFrontImage" alt="business">
+          <div class="cardFrontDescription">
+            <h3>HEC Paris</h3>
+            <p class="bullet" style="color:white">Master's in Management, Merit Scholarship
+            </p>
+          </div>
+        </div>
+        <div class="cardFace cardFaceBack">
+          <div class="cardBackDescription" >
             <h4>HEC Paris</h4>
-            <p class="bullet" style="color:white">Master's in Management <br>
-              Academic Excellence Scholarship
-            </p>
-         </div>
-         </div>
-        <div class="card__face card__face--back">
-              <p class="description3" >As of early
-                2021, I'm a student at HEC Paris, doing my Master's in Management and currently
-                close to completing my first year in France. I see my masters as a way to deepen
-                my knowledge in fields I am interested in  (Tech, Sustainability,
-                Entrepreneurship) and to eventually focus on one  of those topics during my M2
-                year. That being said, I see my studies as a means to what I want to achieve
-                rather than rather than maintaining , I was always focussed on learning as much
-                as possible whether it is relevant for the exam or just for myself.
+            As of early
+            2021, I'm a student at HEC Paris, doing my Master's in Management and currently
+            close to completing my first year in France. I see my masters as a way to deepen
+            my knowledge in fields I am interested in  (Tech, Sustainability,
+            Entrepreneurship) and to eventually focus on one  of those topics during my M2
+            year. That being said, I see my studies as a means to what I want to achieve
+            rather than rather than maintaining , I was always focussed on learning as much
+            as possible whether it is relevant for the exam or just for myself.
+          </div>
         </div>
       </div>
     </div>
     <div class="card">
       <div class="card__inner">
-        <div class="card__face card__face--front">
-          <img src="https://www.domusweb.it/content/dam/domusweb/en/news/gallery/2019/11/26/bocconi-new-campus-has-opened-but-its-not-completed-yet/domus-bocconi-campus.jpg" class="images" alt="business">
-          <div class="centralheader">
-            <h4>Bocconi Univerity</h4>
+        <div class="cardFace cardFaceFront">
+          <img src="https://www.domusweb.it/content/dam/domusweb/en/news/gallery/2019/11/26/bocconi-new-campus-has-opened-but-its-not-completed-yet/domus-bocconi-campus.jpg" class="cardFrontImage" alt="business">
+          <div class="cardFrontDescription">
+            <h3>Bocconi Univerity</h3>
             <p class="bullet" style="color:white">BSc in Economic and Social Sciences <br>
-              Final Paper: Whats's next for Square, Inc.? <br />
-              - growth opportunities in fintech and digital payments
             </p>
-         </div>
-         </div>
-        <div class="card__face card__face--back">
-              <p class="description3" >From September 2017 until July 2020, I studied at Bocconi Univerity in Milan,
-              completing a Bachelor's in Economic and Social Sciences. It was exciting to be
-              in the pioneering class of this program, which, although it traces back to a long history
-              was first taught in English and its new revised form. As such, our class benefitted from
-              a revised curriculum including many leading edge issues in Economics, while being based
-              on rigurous quantitative methods.
+          </div>
+        </div>
+        <div class="cardFace cardFaceBack">
+          <div class="cardBackDescription" >
+<h4>Bocconi Univerity</h4>
+            From September 2017 until July 2020, I studied at Bocconi Univerity in Milan,
+            completing a Bachelor's in Economic and Social Sciences. It was exciting to be
+            in the pioneering class of this program, which, although it traces back to a long history
+            was first taught in English and its new revised form. As such, our class benefitted from
+            a revised curriculum including many leading edge issues in Economics, while being based
+            on rigurous quantitative methods.
+          </div>
         </div>
       </div>
     </div>
     <div class="card">
       <div class="card__inner">
-        <div class="card__face card__face--front">
-          <img src="https://www.voiceofsandiego.org/wp-content/uploads/2018/04/VOSD_SDSU-9-of-11.jpg" class="images" alt="business">
-          <div class="centralheader">
+        <div class="cardFace cardFaceFront">
+          <img src="https://www.voiceofsandiego.org/wp-content/uploads/2018/04/VOSD_SDSU-9-of-11.jpg" class="cardFrontImage" alt="business">
+          <div class="cardFrontDescription">
+            <h3>San Diego State University</h3>
+            <p class="bullet" style="color:white">Exchange Semester,
+              Courses in Business and Art
+            </p>
+          </div>
+        </div>
+        <div class="cardFace cardFaceBack">
+          <div class="cardBackDescription" >
             <h4>San Diego State University</h4>
-            <p class="bullet" style="color:white">Exchange Semester <br>
-              Courses in Business and Fine Art
-            </p>
-         </div>
-         </div>
-        <div class="card__face card__face--back">
-              <p class="description3" >During the second half of 2019, I took the chance to leave Europe for
-              the USA's sunny westcoast. Studying at SDSU was thus as much a personal as much
-              a personal as an academic endevour. On the academic side, I enjoyed the
-              American style assessment methods, including oral participation and group work.
-              On the personal side, I made use of the academic flexibility to take courses in
-              drawing and design as well as surfing and sailing.
+            During the second half of 2019, I took the chance to leave Europe for
+            the USA's sunny westcoast. Studying at SDSU was thus as much a personal as much
+            a personal as an academic endevour. On the academic side, I enjoyed the
+            American style assessment methods, including oral participation and group work.
+            On the personal side, I made use of the academic flexibility to take courses in
+            drawing and design as well as surfing and sailing.
+          </div>
         </div>
       </div>
     </div>
+    <!-- Subheading -->
     <br><br>
-    <h2>Individual Courses</h2> <br><br>
+    <h2>Summer School & Online</h2>
+    <br><br>
+    <!-- Card -->
     <div class="card">
       <div class="card__inner">
-        <div class="card__face card__face--front">
-          <img src="https://th.bing.com/th/id/Rb72cacc18d4e8f80bfea0eb67698b5b0?rik=2%2fNZFIHP%2bLP68A&riu=http%3a%2f%2fwww.lse.ac.uk%2flaw%2fAssets%2fImages%2fLLB-Images%2flse-library-interior-1000x667.jpg&ehk=5p91jiwGYA0oBHxBuDLggzc5g6Kpw4wWD5rPv4JOT64%3d&risl=&pid=ImgRaw" class="images" alt="business">
-          <div class="centralheader">
-            <h4>London School of Economics</h4>
-            <p class="bullet" style="color:white">Summer school <br />
+        <div class="cardFace cardFaceFront">
+          <img src="https://th.bing.com/th/id/Rb72cacc18d4e8f80bfea0eb67698b5b0?rik=2%2fNZFIHP%2bLP68A&riu=http%3a%2f%2fwww.lse.ac.uk%2flaw%2fAssets%2fImages%2fLLB-Images%2flse-library-interior-1000x667.jpg&ehk=5p91jiwGYA0oBHxBuDLggzc5g6Kpw4wWD5rPv4JOT64%3d&risl=&pid=ImgRaw" class="cardFrontImage" alt="business">
+          <div class="cardFrontDescription">
+            <h3>London School of Economics</h3>
+            <p class="bullet" style="color:white">
               Environmental Economics and Urban Geography
             </p>
-         </div>
-         </div>
-        <div class="card__face card__face--back">
-              <p class="description3" >Coming to London for two summer courses at the London School of Economics was
-              exciting to me for two reasons. First, as it gave me the chance to study some
-              topics I was interested in that weren't part of my Bachelors and secondly it allowed
-              me to see how explore a different educational system. On a side note,
-              I also met some of the most incredible people of my life there,
-              many of which I am friends to this day.
-  </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card__inner">
-        <div class="card__face card__face--front">
-          <img src="https://www.ucl.ac.uk/news/sites/news/files/ucl_quad48_web_0.jpg" class="images" alt="business">
-          <div class="centralheader">
-            <h4>Univerity College London</h4>
-            <p class="bullet" style="color:white">Summer school<br />
-              Future Cities and Energy Systems
-            </p>
-         </div>
-         </div>
-        <div class="card__face card__face--back">
-              <p class="description3" >Had I not studied Economics, I think I would have chosen Architecture.
-              Why? There's just a certain fascination in me for creating things that last and
-              affect our everyday life. While I chose not to pursue Architecture as a career,
-              I remained interested in the field and doing a course in Urban Planning at UCL
-              was a way for me to pursue this interest alongside my main studies, living out
-              the creative side of me.
+          </div>
+        </div>
+        <div class="cardFace cardFaceBack">
+          <div class="cardBackDescription" >
+            <h4>London School of Economics</h4>
+            Coming to London for two summer courses at the London School of Economics was
+            exciting to me for two reasons. First, as it gave me the chance to study some
+            topics I was interested in that weren't part of my Bachelors and secondly it allowed
+            me to see how explore a different educational system. On a side note,
+            I also met some of the most incredible people of my life there,
+            many of which I am friends to this day.
+          </div>
         </div>
       </div>
     </div>
+    <!-- Card -->
     <div class="card">
       <div class="card__inner">
-        <div class="card__face card__face--front">
-          <img src="https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1652&q=80" class="images" alt="business">
-          <div class="centralheader">
-            <h4>Udemy, EdX, Coursera</h4>
+        <div class="cardFace cardFaceFront">
+          <img src="https://www.ucl.ac.uk/news/sites/news/files/ucl_quad48_web_0.jpg" class="cardFrontImage" alt="business">
+          <div class="cardFrontDescription">
+            <h3>Univerity College London</h3>
+            <p class="bullet" style="color:white">
+              Future Cities and Energy Systems
+            </p>
+          </div>
+        </div>
+        <div class="cardFace cardFaceBack">
+          <div class="cardBackDescription" >
+            <h4>Univerity College London</h4>
+            Had I not studied Economics, I think I would have chosen Architecture.
+            Why? There's just a certain fascination in me for creating things that last and
+            affect our everyday life. While I chose not to pursue Architecture as a career,
+            I remained interested in the field and doing a course in Urban Planning at UCL
+            was a way for me to pursue this interest alongside my main studies, living out
+            the creative side of me.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Card -->
+    <div class="card">
+      <div class="card__inner">
+        <div class="cardFace cardFaceFront">
+          <img src="https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1652&q=80" class="cardFrontImage" alt="business">
+          <div class="cardFrontDescription">
+            <h3>Udemy, EdX, Coursera</h3>
             <p class="bullet" style="color:white">
               Courses in Data Analytics, Machine Learning, and Web Design
             </p>
-         </div>
-         </div>
-        <div class="card__face card__face--back">
-              <p class="description3" >As of early
-                2021, I'm a student at HEC Paris, doing my Master's in Management and currently
-                close to completing my first year in France. I see my masters as a way to deepen
-                my knowledge in fields I am interested in  (Tech, Sustainability,
-                Entrepreneurship) and to eventually focus on one  of those topics during my M2
-                year. That being said, I see my studies as a means to what I want to achieve
-                rather than rather than maintaining , I was always focussed on learning as much
-                as possible whether it is relevant for the exam or just for myself.
+          </div>
+        </div>
+        <div class="cardFace cardFaceBack">
+          <div class="cardBackDescription" >
+            <h4>Udemy, EdX, Coursera</h4>
+            As of early
+            2021, I'm a student at HEC Paris, doing my Master's in Management and currently
+            close to completing my first year in France. I see my masters as a way to deepen
+            my knowledge in fields I am interested in  (Tech, Sustainability,
+            Entrepreneurship) and to eventually focus on one  of those topics during my M2
+            year. That being said, I see my studies as a means to what I want to achieve
+            rather than rather than maintaining , I was always focussed on learning as much
+            as possible whether it is relevant for the exam or just for myself.
+          </div>
         </div>
       </div>
     </div>
     <div class="footer">
-          <p style="color:white; position: relative;top:12px;">Martin Giovanni Geyer © 2021</p>
+      <p style="color:white; position: relative;top:12px;">Martin Giovanni Geyer © 2021</p>
     </div>
   </div>
 
